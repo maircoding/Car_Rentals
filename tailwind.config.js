@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         'book-bg': "url('/src/assets/book.png')",
         'main-bg': "url('/src/assets/chooseus/bg.png')",
+      },
+      height: {
+        '128': '32rem',
       }
     }
   },

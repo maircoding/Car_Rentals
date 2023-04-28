@@ -10,6 +10,7 @@ import SmallBanner from './components/SmallBanner';
 import ChooseUs from './components/ChooseUs';
 import Testimonial from './components/Testimonial';
 import Faq from './components/Faq';
+import AppBanner from './components/AppBanner';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ChooseUs />
       <Testimonial />
       <Faq />
+      <AppBanner />
       <Footer />
     </div>
   );

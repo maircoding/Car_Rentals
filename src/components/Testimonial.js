@@ -19,8 +19,8 @@ function Testimonial() {
     <div className="bg-gray-200 flex flex-col justify-center items-center h-screen">
       <div>
         <div className="flex flex-col mx-48 justify-center items-center">
-          <h4 className="text-bold text-2xl">Reviewed by People</h4>
-          <h1 className="text-bold my-2 text-5xl">Client's Testimonials</h1>
+          <h4 className="font-bold text-2xl">Reviewed by People</h4>
+          <h1 className="font-bold my-2 text-5xl">Client's Testimonials</h1>
           <p className="text-center my-8 px-64 text-slate-500">
             Discover the positive impact we've made on the our clients by
             reading through their testimonials. Our clients have experienced our

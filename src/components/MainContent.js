@@ -5,8 +5,8 @@ function MainContent() {
     <div>
         <div className='my-10 mx-20 flex flex-row relative' >
             <div className='m-8 w-96 mt-16'>
-                <h4 className='text-bold text-2xl'>Plan your trip now</h4>
-                <h1 className='text-bold text-6xl'>Save <span className='text-red-500'>big</span> with our car rental</h1>
+                <h4 className='font-bold text-2xl'>Plan your trip now</h4>
+                <h1 className='font-bold text-6xl'>Save <span className='text-red-500'>big</span> with our car rental</h1>
                 <h4 className='text-slate-400 my-10'>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</h4>
                 <div className='flex flex-row'>
                     <div className='py-4 px-10 bg-red-400 hover:cursor-pointer hover:text-red-400 hover:bg-white hover:border-b-4 border-red-500 text-white mr-10 rounded'>Book Ride</div>
