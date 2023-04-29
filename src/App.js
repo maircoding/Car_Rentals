@@ -14,8 +14,8 @@ import AppBanner from './components/AppBanner';
 
 function App() {
   return (
-    <div className={`bg-no-repeat bg-right-top bg-[url('./assets/hero.png')]`}>
-      <Header/>
+    <div className={`bg-no-repeat bg-right-top md:bg-[url('./assets/hero.png')]`}>
+      <Header />
       <MainContent />
       <CarBook />
       <Features />

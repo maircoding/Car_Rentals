@@ -23,36 +23,31 @@ function Faq() {
     ]
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen relative bg-no-repeat bg-left bg-[url('./assets/car.png')]">
-
-            <div className="flex flex-col justify-center items-center absolute top-28">
+        <div className="flex flex-col justify-center items-center h-screen relative bg-no-repeat bg-left md:bg-[url('./assets/car.png')]">
+            <div className="flex flex-col justify-center items-center absolute top-16 md:top-28">
                 <h4 className="font-bold text-2xl">FAQ</h4>
-                <h1 className="font-black my-2 text-5xl">Frequently Asked Questions</h1>
-                <p className="font-medium mx-48 text-center my-8 px-64 text-slate-500">
+                <h1 className="font-black my-8  md:w-full text-center text-4xl md:text-5xl">Frequently Asked Questions</h1>
+                <p className="font-medium mx-4 md:mx-48 text-center my-8 md:px-64 text-slate-500">
                     Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.
                 </p>
-                <div className="flex w-1/2 rounded-lg shadow-lg">
+                <div className="flex m-4 my-8 md:w-1/2 bg-white rounded-lg shadow-lg">
                     <div className="w-full">
                         {
                             faqs.map(faq => {
                                 return <div key={faq.id}>
-                                    <div  className={`transition duration-500 font-bold tracking-wide flex justify-between py-4 px-8 ${Select === faq.id ? 'bg-red-600 shadow-lg shadow-red-500/50 text-white': ''}`} onClick={() => Select !== faq.id ? setSelect(faq.id) : setSelect('')}>
+                                    <div className={`transition duration-500 cursor-pointer font-bold tracking-wide flex justify-between py-4 px-8 ${Select === faq.id ? 'bg-red-600 shadow-lg shadow-red-500/50 text-white' : ''}`} onClick={() => Select !== faq.id ? setSelect(faq.id) : setSelect('')}>
                                         <span>{faq.que}</span>
-                                        {Select === faq.id ?<span className="h-2 arrow down"></span>: <span className="h-2 arrow right"></span>}
+                                        {Select === faq.id ? <span className="h-2 arrow down"></span> : <span className="h-2 arrow right"></span>}
                                     </div>
-                                    <div className={`${Select === faq.id ? 'max-h-40 py-4 px-8' : 'max-h-0 overflow-hidden px-8'} transition-all duration-500 ease '}`}>
+                                    <div className={`${Select === faq.id ? 'max-h-96 py-4 px-8' : 'max-h-0 overflow-hidden px-8'} transition-all duration-500 ease '}`}>
                                         <span>{faq.ans}</span>
                                     </div>
                                 </div>
                             })
                         }
-
                     </div>
-                    
+                </div>
             </div>
-
-            </div>
-            
         </div>
     );
 }
