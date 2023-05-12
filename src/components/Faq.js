@@ -35,7 +35,7 @@ function Faq() {
                         {
                             faqs.map(faq => {
                                 return <div key={faq.id}>
-                                    <div className={`transition duration-500 cursor-pointer font-bold tracking-wide flex justify-between py-4 px-8 ${Select === faq.id ? 'bg-red-600 shadow-lg shadow-red-500/50 text-white' : ''}`} onClick={() => Select !== faq.id ? setSelect(faq.id) : setSelect('')}>
+                                    <div className={`transition duration-500 cursor-pointer font-bold tracking-wide flex justify-between py-4 px-8 ${Select === faq.id ? 'bg-colour shadow-lg shadow-colour/50 text-white' : ''}`} onClick={() => Select !== faq.id ? setSelect(faq.id) : setSelect('')}>
                                         <span>{faq.que}</span>
                                         {Select === faq.id ? <span className="h-2 arrow down"></span> : <span className="h-2 arrow right"></span>}
                                     </div>

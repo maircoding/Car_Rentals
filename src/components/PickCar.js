@@ -8,10 +8,10 @@ function PickCar() {
     let active = 'bg-slate-200'
 
     if (car.name === activeCar.name) {
-      active = 'bg-red-400 text-white shadow-lg shadow-red-300'
+      active = 'bg-colour text-white shadow-lg shadow-red-300'
     }
     return (
-      <div key={it} className={'text-xl font-bold p-4 my-2 hover:cursor-pointer hover:text-white hover:bg-red-400 hover:shadow-lg hover:shadow-red-300 ' + active} onClick={() => setActiveCar(car)}>
+      <div key={it} className={'text-xl font-bold p-4 my-2 hover:cursor-pointer hover:text-white hover:bg-colour hover:shadow-lg hover:shadow-red-300 ' + active} onClick={() => setActiveCar(car)}>
         {car.name}
       </div>
     )
@@ -32,7 +32,7 @@ function PickCar() {
           <img src={activeCar.img} alt={activeCar.name} />
         </div>
         <div className='my-10 mx-6 md:mx-32'>
-          <div className='bg-red-400 p-2 text-white text-xl text-center'><span className='font-bold text-3xl'>${activeCar.price}</span> / Per Day</div>
+          <div className='bg-colour p-2 text-white text-xl text-center'><span className='font-bold text-3xl'>${activeCar.price}</span> / Per Day</div>
           <div className='grid grid-cols-2 border-x border-slate-900 p-2'>
             <span className='mx-auto text-center w-full border-r border-slate-900'>Model</span>
             <span className='text-center'>{activeCar.model}</span>
@@ -61,7 +61,7 @@ function PickCar() {
             <span className='mx-auto text-center w-full border-r border-slate-900'>Fuel</span>
             <span className="text-center">{activeCar.fuel}</span>
           </div>
-          <div className='text-center text-white text-xl shadow-lg hover:shadow-red-300 hover:cursor-pointer font-bold p-4 bg-red-400'>
+          <div className='text-center text-white text-xl shadow-lg hover:shadow-red-300 hover:cursor-pointer font-bold p-4 bg-colour'>
             RESERVE NOW
           </div>
         </div>

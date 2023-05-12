@@ -1,23 +1,66 @@
-import React from 'react'
+import React, {useState} from "react";
+import { CAR_DATA } from './CarData'
+import Select from 'react-select'
+import Datepicker from "react-tailwindcss-datepicker";
 
-const formArray = ['   Select Your Car Type', '   Pick-up', '   Drop-of', '   Pick-up', '   Drop-of']
-const rendedFormArray = formArray.map((ele, it) => {
-    return (
-        <div key={it} className='flex flex-col'>
-            <label className='mb-2 font-bold'>{ele} <span className='text-red-500'>*</span></label>
-            <input className='p-2 w-full rounded border border-slate-300 text-slate-500' type="dropdown" placeholder="Select your type"/>
-        </div>
-    )
-})
+var cars = CAR_DATA.map(ele => {return {value:ele.name, label:ele.name}})
+
+const locations = [
+    { value: 'Delhi', label: 'Volkswagen' },
+    { value: 'Mumbai', label: 'Mumbai' },
+    { value: 'Kolkata', label: 'Kolkata' },
+    { value: 'Bangalore', label: 'Bangalore' },
+    { value: 'Chennai', label: 'Chennai' },
+    { value: 'Lucknow', label: 'Lucknow' }
+  ];
 
 function CarBook() {
+    const [date, setDate] = useState();
+    const [car, setCar] = useState();
+    const [pickupLocation, setpickupLocation] = useState();
+    const [dropoffLocation, setdropoffLocation] = useState();
+
+    const handleValueChange = (newValue) => {
+        console.log("newValue:", newValue);
+        setDate(newValue);
+    }
+
+    const rendedFormArray = [
+        <div className='flex flex-col'>
+            <label className='mb-2 font-bold'>Select Your Car Type<span className='text-colour'>*</span></label>
+            <Select value={car || {label:'Select Your Car Type'}} onChange={(car)=>setCar(car)} options={cars}></Select>
+        </div>,
+        <div className='flex flex-col'>
+            <label className='mb-2 font-bold'>Pick-up<span className='text-colour'>*</span></label>
+            <Select value={pickupLocation || {label:'Select pick up location'}} id={"pickup" } options={locations} onChange={(pickupLocation) => setpickupLocation(pickupLocation)}></Select>
+        </div>,
+        <div className='flex flex-col'>
+            <label className='mb-2 font-bold'>Drop-off<span className='text-colour'>*</span></label>
+            <Select value={dropoffLocation || {label:'Select drop off location'}} id={"dropoff" } options={locations} onChange={(dropoffLocation) => setdropoffLocation(dropoffLocation)}></Select>
+        </div>
+    ]
+
   return (
     <div>
         <div className={`bg-repeat bg-book-bg m-4 md:m-20 p-6 md:p-16 rounded-lg shadow-2xl bg-white `}>
             <h1 className='mb-4 font-bold text-2xl'>Book a Car</h1>
             <div className='md:grid md:grid-cols-3 md:gap-8 '>
                 {rendedFormArray}
-                <div className='bottom-0 my-4 mt-6 p-2 bg-red-400 text-center hover:shadow-2xl hover:shadow-red-400 text-white rounded'>Book Ride</div>
+                <div>
+                    <label className='mb-2 font-bold'>Pick-up / Drop Off<span className='text-colour'>*</span></label>
+                    <div className="mt-2">
+                        <Datepicker 
+                            minDate={new Date(Date.now() - 86400000)}
+                            placeholder={"My Placeholder"} 
+                            primaryColor={"red"} 
+                            value={date} 
+                            onChange={handleValueChange} 
+                            showShortcuts={true}
+                        />
+                    </div>
+                </div>
+                
+                <div className={`{ ${(car && pickupLocation && dropoffLocation && date ) ? 'cursor-pointer hover:shadow-2xl hover:shadow-colour bg-colour': 'bg-slate-300 cursor-default'} mt-8 p-2 text-center text-white rounded-lg font-bold}`}>Book Ride</div>
             </div>
         </div>
     </div>

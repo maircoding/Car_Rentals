@@ -46,7 +46,7 @@ function Testimonial() {
                     <h4 className="font-bold">Hari Puttar</h4>
                     <h5>Punjab</h5>
                   </div>
-                  <span className="rotate-180 absolute right-2"><img className="hidden md:block fill-red-400 h-24 w-24" src={quote} alt="quote" /></span>
+                  <span className="rotate-180 absolute right-2"><img className="hidden md:block h-24 w-24" src={quote} alt="quote" /></span>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ function Testimonial() {
                     <h4 className="font-bold">Roshan Weasily</h4>
                     <h5>Delhi</h5>
                   </div>
-                  <span className="rotate-180 absolute right-2"><img className="hidden md:block fill-red-400 h-24 w-24" src={quote} alt="quote" /></span>
+                  <span className="rotate-180 absolute right-2"><img className="hidden md:block h-24 w-24" src={quote} alt="quote" /></span>
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ function Testimonial() {
                     <h4 className="font-bold">Hari Puttar</h4>
                     <h5>Punjab</h5>
                   </div>
-                  <span className="rotate-180 absolute right-2"><img className="hidden md:block fill-red-400 h-24 w-24" src={quote} alt="quote" /></span>
+                  <span className="rotate-180 absolute right-2"><img className="hidden md:block h-24 w-24" src={quote} alt="quote" /></span>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ function Testimonial() {
                     <h4 className="font-bold">Roshan Weasily</h4>
                     <h5>Delhi</h5>
                   </div>
-                  <span className="rotate-180 absolute right-2"><img className="hidden md:block fill-red-400 h-24 w-24" src={quote} alt="quote" /></span>
+                  <span className="rotate-180 absolute right-2"><img className="hidden md:block h-24 w-24" src={quote} alt="quote" /></span>
                 </div>
               </div>
 

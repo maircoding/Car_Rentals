@@ -8,7 +8,7 @@ function Header() {
     const renderHeaderArray = headerArray.map((ele, it) => {
         let temp = ''
         if (it === 0) {
-            temp = 'text-red-600'
+            temp = 'text-colour'
         }
         return (
             <div className={'font-semibold hover:cursor-pointer my-8 mx-4 decoration-double flex items-center ' + temp} key={it}>{ele}</div>
@@ -29,7 +29,7 @@ function Header() {
                 <div className='my-8 flex justify-center items-center'>
                     Sign In
                 </div>
-                <div className='bg-red-400 rounded text-white my-10 flex justify-center items-center'>
+                <div className='my-8 bg-colour rounded text-white my-10 flex justify-center items-center'>
                     Sign Up
                 </div>
             </div>

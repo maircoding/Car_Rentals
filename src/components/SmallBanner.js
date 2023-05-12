@@ -7,7 +7,7 @@ function SmallBanner() {
         Save big with our cheap car rental!
       </div>
       <div className='text-2xl text-center md:m-4'>
-        Top Airports. Local Suppliers. <span className='text-red-400'>24/7</span> Support.
+        Top Airports. Local Suppliers. <span className='text-colour'>24/7</span> Support.
       </div>
     </div>
   )

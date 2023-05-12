@@ -2,7 +2,7 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js"
   ],
   theme: {
     extend: {
@@ -12,6 +12,9 @@ module.exports = {
       },
       height: {
         '128': '32rem',
+      },
+      colors: {
+        'colour': '#ff4d30'
       }
     }
   },

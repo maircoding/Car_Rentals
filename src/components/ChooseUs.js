@@ -23,7 +23,7 @@ function ChooseUs() {
             are designed to give you the ultimate renting experience, so don't
             miss out on your chance to save big.
           </p>
-          <div className="bg-red-400 text-white font-bold md:w-1/3 my-8 py-4 hover:cursor-pointer shadow-lg hover:shadow-red-300 text-center">
+          <div className="bg-colour text-white font-bold md:w-1/3 my-8 py-4 hover:cursor-pointer shadow-lg hover:shadow-red-300 text-center">
             Find Details {`>`}
           </div>
         </div>

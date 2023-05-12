@@ -11,14 +11,14 @@ function Footer() {
           <div className='flex flex-col gap-8'>
             <span>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</span>
             <div className='flex flex-col gap-2'>
-              <a href='tel:123456789' className='cursor-pointer font-bold hover:text-red-500'>
+              <a href='tel:123456789' className='cursor-pointer font-bold hover:text-colour'>
                 &#9742; (123)-456-789
               </a>
-              <a href='mailto: carrental@gmail.com' className='cursor-pointer font-bold hover:text-red-500'>
+              <a href='mailto: carrental@gmail.com' className='cursor-pointer font-bold hover:text-colour'>
                 &#9993; carrental@gmail.com
               </a>
               <span className='cursor-pointer '>
-                Design by <span className='hover:text-red-500 font-bold'>XpeedStudio</span>
+                Design by <span className='hover:text-colour font-bold'>XpeedStudio</span>
               </span>
             </div>
           </div>
@@ -28,11 +28,11 @@ function Footer() {
             <span className='font-bold text-3xl'>COMPANY</span>
           </div>
           <div className='flex flex-col gap-2 md:gap-4'>
-            <span className='cursor-pointer hover:text-red-500'>New York</span>
-            <span className='cursor-pointer hover:text-red-500'>Careers</span>
-            <span className='cursor-pointer hover:text-red-500'>Mobile</span>
-            <span className='cursor-pointer hover:text-red-500'>Blog</span>
-            <span className='cursor-pointer hover:text-red-500'>How we work</span>
+            <span className='cursor-pointer hover:text-colour'>New York</span>
+            <span className='cursor-pointer hover:text-colour'>Careers</span>
+            <span className='cursor-pointer hover:text-colour'>Mobile</span>
+            <span className='cursor-pointer hover:text-colour'>Blog</span>
+            <span className='cursor-pointer hover:text-colour'>How we work</span>
           </div>
         </div>
         <div className='md:w-1/4'>
@@ -52,7 +52,7 @@ function Footer() {
           <div className='flex flex-col gap-4'>
             <span>Subscribe your Email address for latest news & updates.</span>
             <input className='bg-slate-200 p-4 border-0 focus:outline-none' placeholder='Enter Email Address'></input>
-            <div className='bg-red-500 p-4 text-white text-center font-bold rounded shadow-lg shadow-red-200 cursor-pointer hover:shadow-red-500'>
+            <div className='bg-colour p-4 text-white text-center font-bold rounded shadow-lg shadow-red-200 cursor-pointer hover:shadow-colour'>
               <button>Submit</button>
             </div>
           </div>
