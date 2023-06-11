@@ -5,7 +5,7 @@ import icon3 from "../assets/icon3.png"
 
 function Features() {
     return (
-        <div className="m-4 mt-20 md:m-20">
+        <div id="choose" className="m-4 mt-20 md:m-20">
             <div className="flex flex-col justify-center items-center">
                 <h4 className="text-3xl font-bold m-8">Plan your trip now</h4>
                 <h1 className="text-5xl text-center font-bold mb-8">Quick & easy car rental</h1>
