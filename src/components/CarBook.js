@@ -41,7 +41,7 @@ function CarBook() {
     ]
 
   return (
-    <div>
+    <div id="book">
         <div className={`bg-repeat bg-book-bg m-4 md:m-20 p-6 md:p-16 rounded-lg shadow-2xl bg-white `}>
             <h1 className='mb-4 font-bold text-2xl'>Book a Car</h1>
             <div className='md:grid md:grid-cols-3 md:gap-8 '>
