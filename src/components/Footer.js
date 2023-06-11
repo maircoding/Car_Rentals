@@ -17,9 +17,6 @@ function Footer() {
               <a href='mailto: carrental@gmail.com' className='cursor-pointer font-bold hover:text-colour'>
                 &#9993; carrental@gmail.com
               </a>
-              <span className='cursor-pointer '>
-                Design by <span className='hover:text-colour font-bold'>XpeedStudio</span>
-              </span>
             </div>
           </div>
         </div>
