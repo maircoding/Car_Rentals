@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='flex justify-center h-[80rem] md:h-[26rem]'>
+    <div id='Contact' className='flex justify-center h-[80rem] md:h-[26rem]'>
       <div className='flex flex-col text-center md:text-left md:flex-row gap-20 md:gap-10 w-5/6 mt-20'>
         <div className=' md:w-1/4'>
           <div className=' mb-8 text-3xl'>

@@ -6,7 +6,7 @@ import icon3 from "../assets/chooseus/icon3.png";
 
 function ChooseUs() {
   return (
-    <div className={`my-20 bg-no-repeat bg-[url('./assets/bg.png')]`}>
+    <div id="About" className={`my-20 bg-no-repeat bg-[url('./assets/bg.png')]`}>
       <div className="flex justify-center">
         <img src={main} alt="main-img" />
       </div>

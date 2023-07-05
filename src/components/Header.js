@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const headerArray = ['Home', 'About', 'Vehicle', 'Models', 'Testimonials', 'Our Team', 'Contact']
+const headerArray = ['Home', 'About', 'Vehicle', 'Models', 'Testimonials', 'Contact']
 
 
 function Header() {
@@ -11,7 +11,9 @@ function Header() {
             temp = 'text-colour'
         }
         return (
-            <div className={'font-semibold hover:cursor-pointer my-8 mx-4 decoration-double flex items-center ' + temp} key={it}>{ele}</div>
+            <a href={`#${ele}`}>
+                <div className={'font-semibold hover:cursor-pointer my-8 mx-4 decoration-double flex items-center ' + temp} key={it}>{ele}</div>
+            </a>
         )
     })
     return (
@@ -22,7 +24,7 @@ function Header() {
             <div className='absolute top-0 right-0 text-2xl p-2 md:hidden' onClick={() => setIsVisible(!isVisible)}>
                 &#9776;
             </div>
-            <div className={`${isVisible ? '' : 'hidden'} absolute left-0 bg-white md:bg-inherit md:flex md:flex-row justify-center col-span-4 md:static`}>
+            <div className={`${isVisible ? '' : 'hidden'} w-[50rem] absolute left-0 bg-white md:bg-inherit md:flex md:flex-row justify-center col-span-4 md:static z-10 md:w-100`}>
                 {renderHeaderArray}
             </div>
             <div className={`hidden hover:cursor-pointer md:grid md:grid-cols-2`}>

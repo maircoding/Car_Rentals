@@ -19,7 +19,7 @@ function PickCar() {
 
   return (
     <div>
-      <div className='mt-20 md:m-0 flex flex-col justify-center items-center'>
+      <div id='Models' className='mt-20 md:m-0 flex flex-col justify-center items-center'>
         <h2 className='text-2xl font-bold mb-2'>Vehicle Models</h2>
         <h1 className='text-5xl font-bold mb-8'>Our rental fleet</h1>
         <h4 className='text-l w-2/3 md:w-1/3 text-center'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</h4>
@@ -61,9 +61,11 @@ function PickCar() {
             <span className='mx-auto text-center w-full border-r border-slate-900'>Fuel</span>
             <span className="text-center">{activeCar.fuel}</span>
           </div>
-          <div className='text-center text-white text-xl shadow-lg hover:shadow-red-300 hover:cursor-pointer font-bold p-4 bg-colour'>
-            RESERVE NOW
-          </div>
+          <a href='#book'>
+            <div className='text-center text-white text-xl shadow-lg hover:shadow-red-300 hover:cursor-pointer font-bold p-4 bg-colour'>
+              RESERVE NOW
+            </div>
+          </a>
         </div>
       </div>
     </div>

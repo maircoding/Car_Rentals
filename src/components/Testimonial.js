@@ -16,7 +16,7 @@ function Testimonial() {
   }
 
   return (
-    <div className="bg-gray-200 flex flex-col justify-center items-center h-screen">
+    <div id="Testimonials" className="bg-gray-200 flex flex-col justify-center items-center h-screen">
       <div>
         <div className="flex flex-col md:mx-48 justify-center items-center">
           <h4 className="mb-10 font-bold text-2xl">Reviewed by People</h4>
