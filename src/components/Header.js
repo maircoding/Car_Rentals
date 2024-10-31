@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from "../assets/logo.png"
 
 const headerArray = ['Home', 'About', 'Vehicle', 'Models', 'Testimonials', 'Contact']
 
@@ -19,7 +20,7 @@ function Header() {
     return (
         <div className='m-8 relative md:m-0 md:mx-20 md:grid md:grid-cols-6 md:static'>
             <div className='w-32 md:m-8 '>
-                <img alt='img' src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png" />
+                <img alt='img' src={logo} className="w-20 filter-hue-rotate"/>
             </div>
             <div className='absolute top-0 right-0 text-2xl p-2 md:hidden' onClick={() => setIsVisible(!isVisible)}>
                 &#9776;
@@ -31,7 +32,7 @@ function Header() {
                 <div className='my-8 flex justify-center items-center'>
                     Sign In
                 </div>
-                <div className='my-8 bg-colour rounded text-white my-10 flex justify-center items-center'>
+                <div className='py-1 bg-colour rounded text-white my-16 flex justify-center items-center'>
                     Sign Up
                 </div>
             </div>

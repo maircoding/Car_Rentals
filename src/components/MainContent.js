@@ -1,9 +1,10 @@
 import React from 'react'
+import mainCar from '../assets/mainCar.webp'
 
 function MainContent() {
     return (
         <div>
-            <div className='md:my-10 md:mx-20 flex flex-row relative' >
+            <div className='md:mx-20 flex flex-row justify-between relative' >
                 <div className='m-8 w-96 mt-16'>
                     <h4 className='pb-6 font-bold text-center text-2xl md:text-left'>Plan your trip now</h4>
                     <h1 className='py-2 font-bold text-center text-5xl p-4 md:text-left md:text-6xl md:p-0'>Save <span className='text-colour'>big</span> with our car rental</h1>
@@ -14,7 +15,7 @@ function MainContent() {
                     </div>
                 </div>
                 <div className='hidden md:block'>
-                    <img src="https://car-rental-ten.vercel.app/static/media/main-car.9b30faa59387879fa060.png" alt='car' />
+                    <img className='w-[700px] pt-20' src={mainCar} alt='car' />
                 </div>
             </div>
         </div>
