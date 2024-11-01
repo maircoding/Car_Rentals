@@ -19,7 +19,7 @@ function Header() {
     })
     return (
         <div className='m-8 relative md:m-0 md:mx-20 md:grid md:grid-cols-6 md:static'>
-            <div className='w-32 md:m-8 '>
+            <div className='w-32 md:m-12 '>
                 <img alt='img' src={logo} className="w-20 filter-hue-rotate"/>
             </div>
             <div className='absolute top-0 right-0 text-2xl p-2 md:hidden' onClick={() => setIsVisible(!isVisible)}>
